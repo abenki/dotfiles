@@ -1,0 +1,6 @@
+theme = tokyonight
+background = 0f0f11
+font-family = CommitMono
+window-padding-x = 6
+window-colorspace = "display-p3"
+window-padding-balance = true
