@@ -100,5 +100,14 @@ export PATH="/opt/homebrew/sbin:$PATH"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+# Automatically activate .venv
+function cd() {
+    builtin cd "$@"  # Use the default 'cd' command to change directory
+    if [[ -d ".venv/bin" ]]; then
+        echo "Activating virtual environment in .venv"
+        source .venv/bin/activate
+    fi
+}
+
 # To see a default .zshrc template:
 # https://github.com/ohmyzsh/ohmyzsh/blob/master/templates/zshrc.zsh-template
