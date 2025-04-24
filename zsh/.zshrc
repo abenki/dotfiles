@@ -111,3 +111,10 @@ function cd() {
 
 # To see a default .zshrc template:
 # https://github.com/ohmyzsh/ohmyzsh/blob/master/templates/zshrc.zsh-template
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/anass/.cache/lm-studio/bin"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
