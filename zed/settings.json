@@ -7,6 +7,8 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "show_edit_predictions": false,
+  "icon_theme": "Material Icon Theme",
   "base_keymap": "VSCode",
   "ui_font_family": "Univers",
   "ui_font_size": 15,
@@ -20,5 +22,19 @@
     "mode": "system",
     "light": "Github Light",
     "dark": "Github Dark"
+  },
+  "languages": {
+    "Python": {
+      "language_servers": ["ruff"]
+    }
+  },
+  "lsp": {
+    "ruff": {
+      "initialization_options": {
+        "settings": {
+          "lineLength": 120
+        }
+      }
+    }
   }
 }
